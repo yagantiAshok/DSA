@@ -1,2 +1,2 @@
 
-# Daily Praticinf DSA Problems
+# Daily PraticinG DSA Problems
