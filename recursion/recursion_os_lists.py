@@ -67,7 +67,37 @@
 #     return sum_of_array(array[1:],accumulator)
 
 
+# tail method
+# def firstelementofindex(array, element, index=0):
+#     if len(array) == 0:
+#         return -1
+    
+#     if array[0] == element:
+#         return index
+    
+#     return firstelementofindex(array[1:], element, index + 1)
 
-# print(sum_of_array([1,2,3,4,5]))
+# print(firstelementofindex([1,2,3,4,5,6],6))
+
+
+# head method
+
+def firstelementofindex(array, element, index=0):
+    if len(array) == 0:
+        return -1
+    
+    if array[0] == element:
+        return index
+    
+    ans = firstelementofindex(array[1:], element, index + 1)
+
+    if array[0] == element:
+       
+       ans  = array[0]
+
+    return ans 
+
+print(firstelementofindex([23,56,12,45,32],56))
+
 
 
