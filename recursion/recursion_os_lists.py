@@ -82,22 +82,39 @@
 
 # head method
 
-def firstelementofindex(array, element, index=0):
-    if len(array) == 0:
-        return -1
+# def firstelementofindex(array, element, index=0):
+#     if len(array) == 0:
+#         return -1
     
-    if array[0] == element:
-        return index
+#     if array[0] == element:
+#         return index
     
-    ans = firstelementofindex(array[1:], element, index + 1)
+#     ans = firstelementofindex(array[1:], element, index + 1)
 
-    if array[0] == element:
+#     if array[0] == element:
        
-       ans  = array[0]
+#        ans  = array[0]
 
-    return ans 
+#     return ans 
 
-print(firstelementofindex([23,56,12,45,32],56))
+# print(firstelementofindex([23,56,12,45,32],56))
 
+
+
+def updatelist(array,x,index,anslist):
+
+    if len(array)==index:
+
+        return anslist
+    
+    if array[index]==x:
+
+        anslist.append(index)
+    
+    updatelist(array,x,index+1,anslist)
+
+anslist = []
+
+print(updatelist([3,2,5,2,8,2,1],2,0,anslist=anslist))
 
 
