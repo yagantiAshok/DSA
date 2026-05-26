@@ -89,13 +89,16 @@ def subsequence(string):
 
     ans = []
 
-    ans.extend(small_ans)
 
     for each_seq in small_ans:
 
         ans.append(my_char + each_seq)
 
+    
+    ans.extend(small_ans)
+
     return ans
+
 
 
 s = "abc"
