@@ -35,7 +35,7 @@ def roted_sorted_array_ascending(array,target):
 
 
 
-array = [7, 0,7,7,7,7]
+array = [2, 2, 2, 0, 2, 2]
 
 target = 0
 

@@ -2,8 +2,6 @@
 
 
 
-
-
 def kth_missing_number(arr,k):
 
     start = 0
