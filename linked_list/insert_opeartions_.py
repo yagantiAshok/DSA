@@ -9,31 +9,6 @@ class Node:
         self.data = data
         self.ref = None
 
-    
-# first = Node(10)
-
-# second = Node(11)
-
-# third = Node(12)
-
-# first.ref = second
-# second.ref = third
-
-
-
-# def print_list(head):
-
-    
-#     temp = head 
-
-#     while temp!=None:
-
-#         print(temp.data,end="->")
-
-#         temp = temp.ref
-
-# node(first)
-
 
 def take_input():
 
@@ -72,31 +47,51 @@ def take_input():
     
     return head
 
-# head = take_input()
+head = take_input()
 
+# def insert_at_head(head,data):
 
+#     new_node = Node(data)
 
+#     new_node.ref = head
 
-# print_list(head=head)
+#     return new_node
 
+# new_head = insert_at_head(head,8)
 
-def length_of_linked_list(head):
+def insert_at_tail(head,data):
 
+    newnode = Node(data)
+
+    if (head is None):
+
+        return newnode
+    
     temp = head
 
-    count = 0
+    while (temp.ref!=None):
+
+        temp = temp.ref 
+    
+    temp.ref = newnode
+
+    return head
+
+head = insert_at_tail(head,0)
+
+
+
+def print_list(head):
+
+    
+    temp = head 
 
     while temp!=None:
 
-        count+=1
+        print(temp.data,end="->")
 
         temp = temp.ref
-    
-
-    return count
-
-# print(length_of_linked_list(head))
-
-
-
         
+
+print_list(head)
+
