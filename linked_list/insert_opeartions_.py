@@ -49,37 +49,94 @@ def take_input():
 
 head = take_input()
 
-# def insert_at_head(head,data):
+def insert_at_head(head,data):
 
-#     new_node = Node(data)
+    new_node = Node(data)
 
-#     new_node.ref = head
+    new_node.ref = head
 
-#     return new_node
+    return new_node
 
 # new_head = insert_at_head(head,8)
 
-def insert_at_tail(head,data):
+# def insert_at_tail(head,data):
 
-    newnode = Node(data)
+#     newnode = Node(data)
 
-    if (head is None):
+#     if (head is None):
 
-        return newnode
+#         return newnode
     
+#     temp = head
+
+#     while (temp.ref!=None):
+
+#         temp = temp.ref 
+    
+#     temp.ref = newnode
+
+#     return head
+
+# head = insert_at_tail(head,0)
+
+
+def insert_at_index(head,index,data):
+
+    if index==0:
+
+        return insert_at_head(head,data)
+
     temp = head
 
-    while (temp.ref!=None):
+    count = 0
 
-        temp = temp.ref 
+    while (temp!=None and count<index-1):
+
+        count+=1
+
+        temp = temp.ref
+
+    if temp is None:
+
+        print( "Index out of range ")
+
+        return head
+
     
+    newnode = Node(data)
+
+    newnode.ref = temp.ref
+
     temp.ref = newnode
 
     return head
 
-head = insert_at_tail(head,0)
+
+# head = insert_at_index(head,0,0)
 
 
+
+def insert_at_index_recursively(head,index,data):
+
+    if (index == 0):
+
+        newnode = Node(data)
+
+        newnode.ref = head
+
+        return newnode
+    
+    if (head is None):
+
+        print("Index out of range")
+
+        return head
+    
+    head.ref = insert_at_index_recursively(head.ref,index-1,data)
+
+    return head 
+
+head = insert_at_index_recursively(head,4,100)
 
 def print_list(head):
 
