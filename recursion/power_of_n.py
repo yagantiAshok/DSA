@@ -49,23 +49,66 @@
 # print(countdigits(-32134567891))
 
 
-def countdigits(num):
+# def countdigits(num):
 
-    num = abs(num)
+#     num = abs(num)
 
-    if (num>=0 and num<=9): # if (num<10)
+#     if (num>=0 and num<=9): # if (num<10)
 
-        return num
+#         return num
     
-    remainder = num%10
+#     remainder = num%10
     
-    digit = num//10
+#     digit = num//10
 
-    return remainder + countdigits(digit)
+#     return remainder + countdigits(digit)
 
-print(countdigits(32134567891))
-
-
+# print(countdigits(32134567891))
 
 
 
+
+
+# def reverse_number(num):
+
+#     num = abs(num)
+
+#     if num<10:
+
+#         return str(num)
+    
+#     return str(num%10) + reverse_number(num//10)
+
+# print(reverse_number(987654321))
+
+
+# def reverse_string(string):
+
+#     if (len(string)==0 or string == "" ):
+
+#         return ""
+    
+#     ans = reverse_string(string[1:])
+
+#     return ans + string[0]
+
+# print(reverse_string("ashok"))
+
+
+def palindrome(string,start ,end ):
+
+
+
+    if (start>=end):
+
+        return True
+    
+    if string[start]!=string[end]:
+
+        return False 
+    
+    return palindrome(string,start+1,end-1)
+
+string = "abba"
+
+print(palindrome(string.lower(),0,len(string)-1))
