@@ -95,20 +95,42 @@
 # print(reverse_string("ashok"))
 
 
-def palindrome(string,start ,end ):
+# def palindrome(string,start ,end ):
 
 
 
-    if (start>=end):
+#     if (start>=end):
 
-        return True
+#         return True
     
-    if string[start]!=string[end]:
+#     if string[start]!=string[end]:
 
-        return False 
+#         return False 
     
-    return palindrome(string,start+1,end-1)
+#     return palindrome(string,start+1,end-1)
 
-string = "abba"
+# string = "abba"
 
-print(palindrome(string.lower(),0,len(string)-1))
+# print(palindrome(string.lower(),0,len(string)-1))
+
+
+
+# def remove_char(string,char):
+
+#     if (len(string)==0 or string==""):
+
+#         return ""
+    
+#     ans = remove_char(string[1:],char)
+
+#     if string[0]==char:
+
+#         return ans
+    
+#     return string[0] + ans 
+
+# name = input("Enter name : ")
+
+# char__ = input("Enter char to remove : ")
+
+# print(remove_char(name,char=char__))
