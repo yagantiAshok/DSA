@@ -48,6 +48,7 @@ def take_input():
     return head
 
 head = take_input()
+
 def print_list(head):
 
     
@@ -210,45 +211,128 @@ print_list(head)
 # head = recursively_remove_tail(head)
 
 
-def delete_at_index(head,index):
+# def delete_at_index(head,index):
 
-    if ( index==0 ):
+#     if ( index==0 ):
 
-        head = head.ref
+#         head = head.ref
 
-        return head 
+#         return head 
     
+#     if (head is None):
+
+#         return None
+    
+#     count = 0
+#     temp = head
+
+#     while (temp!=None and count<index-1):
+
+#         temp = temp.ref
+
+#         count+=1
+
+#     if (temp is None or temp.ref==None):
+
+#         return "index out of range"
+    
+#     tail_end = temp.ref
+
+#     temp.ref = tail_end.ref
+
+#     return head
+
+
+# head = delete_at_index(head,3)
+# def delete_node_recursively(head,index):
+
+        
+#     if (head is None):
+
+#         print("index out of range or no element")
+
+#         return None
+
+#     if (index == 0 ):
+
+#         return head.ref
+
+    
+#     head.ref = delete_node_recursively(head.ref, index - 1)
+
+#     return head
+
+# head = delete_node_recursively(head,0)
+
+# print(head)
+
+
+# def delete_node_by_value(head,value):
+
+
+#     if (head is None):
+
+#         print("No elements")
+
+#         return None
+    
+
+#     if (head.data==value):
+
+#         return head.ref
+
+#     temp = head
+
+#     while (temp.ref!=None):
+
+#         if (temp.ref.data==value):
+
+#             temp.ref = temp.ref.ref
+
+#             return head
+        
+#         temp = temp.ref
+    
+#     print("That element not presented")
+
+#     return head
+
+
+# head = delete_node_by_value(head,value)
+    
+
+def search_LL_BY_value(head,value):
+
     if (head is None):
+
+        print("No linked list")
 
         return None
     
-    count = 0
     temp = head
 
-    while (temp!=None and count<index-1):
+    while (temp is not None):
 
+        if (temp.data == value):
+
+            return True
+        
         temp = temp.ref
+        
 
-        count+=1
-
-    if (temp is None or temp.ref==None):
-
-        return "index out of range"
-    
-    tail_end = temp.ref
-
-    temp.ref = tail_end.ref
-
-    return head
-
-
-head = delete_at_index(head,3)
-
-print(head)
+    return False
 
 print()
 
-print("After deleted")
+value = int(input("Enter number to search : "))
 
-print_list(head)
+store = search_LL_BY_value(head,value)
+
+print(store)
+
+# print()
+
+# print("After deleted")
+
+# print_list(head)
 
