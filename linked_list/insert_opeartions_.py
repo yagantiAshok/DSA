@@ -336,6 +336,7 @@ head = take_input()
 
 # print_list(head)
 
+
 def middle_of_linked_list(head):
 
     low = head 

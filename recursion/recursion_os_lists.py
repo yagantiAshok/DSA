@@ -192,3 +192,24 @@
 # print(array_sorted_or_not([1,2,3,4,5,6,70,1],0))
 
 
+def last_occurence(array,value,index):
+
+    if len(array) == index:
+
+        return -1
+    
+    ans = last_occurence(array,value,index+1)
+
+    if ans!=-1:
+
+        return ans
+    
+    elif array[index] == value:
+
+        return index
+    
+    return ans 
+
+
+print(last_occurence([1,2,3,4,5,4,32,1],1,0))
+
