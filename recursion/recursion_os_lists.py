@@ -172,21 +172,23 @@
 
 
 
-def array_sorted_or_not(array,index):
+# def array_sorted_or_not(array,index):
 
-    if not array:
+#     if not array:
 
-        return True
+#         return True
 
-    if (len(array)-1 == index):
+#     if (len(array)-1 == index):
 
-        return True
+#         return True
     
-    if array[index]>array[index+1]:
+#     if array[index]>array[index+1]:
 
-        return False
+#         return False
     
-    return array_sorted_or_not(array,index+1)
+#     return array_sorted_or_not(array,index+1)
 
 
-print(array_sorted_or_not([1,2,3,4,5,6,70,1],0))
+# print(array_sorted_or_not([1,2,3,4,5,6,70,1],0))
+
+

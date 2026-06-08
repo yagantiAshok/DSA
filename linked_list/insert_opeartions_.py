@@ -49,19 +49,19 @@ def take_input():
 
 head = take_input()
 
-def print_list(head):
+# def print_list(head):
 
     
-    temp = head 
+#     temp = head 
 
-    while temp!=None:
+#     while temp!=None:
 
-        print(temp.data,end="->")
+#         print(temp.data,end="->")
 
 
-        temp = temp.ref
+#         temp = temp.ref
 
-print_list(head)
+# print_list(head)
 
 # def insert_at_head(head,data):
 
@@ -157,178 +157,178 @@ print_list(head)
 
 # def delete_head_node(head):
 
+# #     if (head is None):
+
+# #         return "no elements"
+    
+# #     new_head = head.ref
+
+# #     return new_head
+    
+# # head = delete_head_node(head)
+
+# # print(head)
+
+# # def delete_tail_node(head):
+
+# #     if (head is None) :# if (head is None or head.ref==None):
+
+# #         return None
+    
+# #     if (head.ref==None):
+
+# #         return delete_head_node(head)
+    
+# #     previous_node = head
+
+# #     temp = head
+
+# #     while temp.ref!=None:# temp.ref.ref
+
+# #         previous_node  = temp
+
+# #         temp = temp.ref
+    
+# #     previous_node.ref = temp.ref
+
+# #     return head
+
+# # head = delete_tail_node(head)
+
+# # print(head)
+
+# # def recursively_remove_tail(head):
+
+# #     if (head is None or head.ref == None):
+
+# #         return None
+    
+# #     head.ref = recursively_remove_tail(head.ref)
+
+# #     return head
+
+
+# # head = recursively_remove_tail(head)
+
+
+# # def delete_at_index(head,index):
+
+# #     if ( index==0 ):
+
+# #         head = head.ref
+
+# #         return head 
+    
+# #     if (head is None):
+
+# #         return None
+    
+# #     count = 0
+# #     temp = head
+
+# #     while (temp!=None and count<index-1):
+
+# #         temp = temp.ref
+
+# #         count+=1
+
+# #     if (temp is None or temp.ref==None):
+
+# #         return "index out of range"
+    
+# #     tail_end = temp.ref
+
+# #     temp.ref = tail_end.ref
+
+# #     return head
+
+
+# # head = delete_at_index(head,3)
+# # def delete_node_recursively(head,index):
+
+        
+# #     if (head is None):
+
+# #         print("index out of range or no element")
+
+# #         return None
+
+# #     if (index == 0 ):
+
+# #         return head.ref
+
+    
+# #     head.ref = delete_node_recursively(head.ref, index - 1)
+
+# #     return head
+
+# # head = delete_node_recursively(head,0)
+
+# # print(head)
+
+
+# # def delete_node_by_value(head,value):
+
+
+# #     if (head is None):
+
+# #         print("No elements")
+
+# #         return None
+    
+
+# #     if (head.data==value):
+
+# #         return head.ref
+
+# #     temp = head
+
+# #     while (temp.ref!=None):
+
+# #         if (temp.ref.data==value):
+
+# #             temp.ref = temp.ref.ref
+
+# #             return head
+        
+# #         temp = temp.ref
+    
+# #     print("That element not presented")
+
+# #     return head
+
+
+# # head = delete_node_by_value(head,value)
+    
+
+# def search_LL_BY_value(head,value):
+
 #     if (head is None):
 
-#         return "no elements"
-    
-#     new_head = head.ref
-
-#     return new_head
-    
-# head = delete_head_node(head)
-
-# print(head)
-
-# def delete_tail_node(head):
-
-#     if (head is None) :# if (head is None or head.ref==None):
+#         print("No linked list")
 
 #         return None
     
-#     if (head.ref==None):
-
-#         return delete_head_node(head)
-    
-#     previous_node = head
-
 #     temp = head
 
-#     while temp.ref!=None:# temp.ref.ref
+#     while (temp is not None):
 
-#         previous_node  = temp
+#         if (temp.data == value):
 
-#         temp = temp.ref
-    
-#     previous_node.ref = temp.ref
-
-#     return head
-
-# head = delete_tail_node(head)
-
-# print(head)
-
-# def recursively_remove_tail(head):
-
-#     if (head is None or head.ref == None):
-
-#         return None
-    
-#     head.ref = recursively_remove_tail(head.ref)
-
-#     return head
-
-
-# head = recursively_remove_tail(head)
-
-
-# def delete_at_index(head,index):
-
-#     if ( index==0 ):
-
-#         head = head.ref
-
-#         return head 
-    
-#     if (head is None):
-
-#         return None
-    
-#     count = 0
-#     temp = head
-
-#     while (temp!=None and count<index-1):
-
-#         temp = temp.ref
-
-#         count+=1
-
-#     if (temp is None or temp.ref==None):
-
-#         return "index out of range"
-    
-#     tail_end = temp.ref
-
-#     temp.ref = tail_end.ref
-
-#     return head
-
-
-# head = delete_at_index(head,3)
-# def delete_node_recursively(head,index):
-
-        
-#     if (head is None):
-
-#         print("index out of range or no element")
-
-#         return None
-
-#     if (index == 0 ):
-
-#         return head.ref
-
-    
-#     head.ref = delete_node_recursively(head.ref, index - 1)
-
-#     return head
-
-# head = delete_node_recursively(head,0)
-
-# print(head)
-
-
-# def delete_node_by_value(head,value):
-
-
-#     if (head is None):
-
-#         print("No elements")
-
-#         return None
-    
-
-#     if (head.data==value):
-
-#         return head.ref
-
-#     temp = head
-
-#     while (temp.ref!=None):
-
-#         if (temp.ref.data==value):
-
-#             temp.ref = temp.ref.ref
-
-#             return head
+#             return True
         
 #         temp = temp.ref
-    
-#     print("That element not presented")
-
-#     return head
-
-
-# head = delete_node_by_value(head,value)
-    
-
-def search_LL_BY_value(head,value):
-
-    if (head is None):
-
-        print("No linked list")
-
-        return None
-    
-    temp = head
-
-    while (temp is not None):
-
-        if (temp.data == value):
-
-            return True
-        
-        temp = temp.ref
         
 
-    return False
+#     return False
 
-print()
+# print()
 
-value = int(input("Enter number to search : "))
+# value = int(input("Enter number to search : "))
 
-store = search_LL_BY_value(head,value)
+# store = search_LL_BY_value(head,value)
 
-print(store)
+# print(store)
 
 # print()
 
@@ -336,3 +336,46 @@ print(store)
 
 # print_list(head)
 
+def middle_of_linked_list(head):
+
+    low = head 
+
+    high = head 
+
+    while (high is not None):
+
+
+        if (high.ref is not None):
+           
+            low = low.ref
+
+            high = high.ref.ref
+
+        else:
+           
+           high = None
+
+
+    
+    return low
+
+head = middle_of_linked_list(head=head)
+
+
+def print_list(head):
+
+    
+    temp = head 
+
+    while temp!=None:
+
+        print(temp.data,end="->")
+
+
+        temp = temp.ref
+
+print_list(head)
+
+
+
+    
