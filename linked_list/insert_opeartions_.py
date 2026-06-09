@@ -49,19 +49,20 @@ def take_input():
 
 head = take_input()
 
-# def print_list(head):
+def print_list(head):
 
     
-#     temp = head 
+    temp = head 
 
-#     while temp!=None:
+    while temp!=None:
 
-#         print(temp.data,end="->")
+        print(temp.data,end="->")
 
 
-#         temp = temp.ref
+        temp = temp.ref
 
-# print_list(head)
+print_list(head)
+print()
 
 # def insert_at_head(head,data):
 
@@ -337,46 +338,70 @@ head = take_input()
 # print_list(head)
 
 
-def middle_of_linked_list(head):
+# def middle_of_linked_list(head):
 
-    low = head 
+#     low = head 
 
-    high = head 
+#     high = head 
 
-    while (high is not None):
+#     while (high is not None):
 
 
-        if (high.ref is not None):
+#         if (high.ref is not None):
            
-            low = low.ref
+#             low = low.ref
 
-            high = high.ref.ref
+#             high = high.ref.ref
 
-        else:
+#         else:
            
-           high = None
+#            high = None
 
 
     
-    return low
+#     return low
 
-head = middle_of_linked_list(head=head)
+# head = middle_of_linked_list(head=head)
 
 
-def print_list(head):
+# def print_list(head):
 
     
-    temp = head 
+#     temp = head 
 
-    while temp!=None:
+#     while temp!=None:
 
-        print(temp.data,end="->")
+#         print(temp.data,end="->")
 
 
-        temp = temp.ref
+#         temp = temp.ref
+
+# print_list(head)
+
+
+
+def reverse_linked_list(head):
+
+    if (head is None):
+
+        return head
+
+    
+    prev= None
+    curr = head
+
+    while (curr  is not None):
+
+        next = curr.ref
+
+        curr.ref = prev
+
+        prev = curr
+
+        curr = next 
+    
+    return prev
+
+head = reverse_linked_list(head)
 
 print_list(head)
-
-
-
-    
