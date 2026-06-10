@@ -134,3 +134,24 @@
 # char__ = input("Enter char to remove : ")
 
 # print(remove_char(name,char=char__))
+
+
+# def binary_form_of_a_number(num):
+
+#     if (num==0):
+
+#         return "0"
+
+#     if (num==1):
+
+#         return str(1)
+    
+#     return binary_form_of_a_number(num//2) + str(num%2)
+
+# print(binary_form_of_a_number(0))
+
+
+# a = 0
+# b= a
+
+# print(b==a)

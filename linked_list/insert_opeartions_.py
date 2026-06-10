@@ -378,30 +378,43 @@ print()
 
 # print_list(head)
 
+first = Node(1)
+second = Node(2)
+third = Node(3)
+
+head_true = first 
+head_true.ref=second
+second.ref = third
+third.ref = first
+
+del(first)
+del(second)
+del(third)
+
+# print_list(head_true)
 
 
-def reverse_linked_list(head):
 
-    if (head is None):
 
-        return head
+
+
+
+def fast_method(head):
 
     
-    prev= None
-    curr = head
+    slow = head
+    fast = head
 
-    while (curr  is not None):
+    while (fast is not None and fast.ref is not None):
 
-        next = curr.ref
+        slow = slow.ref
 
-        curr.ref = prev
+        fast = fast.ref.ref
 
-        prev = curr
+        if slow==fast:
 
-        curr = next 
+            return True
     
-    return prev
+    return False
 
-head = reverse_linked_list(head)
-
-print_list(head)
+print(fast_method(head_true))
