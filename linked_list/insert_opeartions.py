@@ -378,43 +378,44 @@ print()
 
 # print_list(head)
 
-first = Node(1)
-second = Node(2)
-third = Node(3)
+# first = Node(1)
+# second = Node(2)
+# third = Node(3)
 
-head_true = first 
-head_true.ref=second
-second.ref = third
-third.ref = first
+# head_true = first 
+# head_true.ref=second
+# second.ref = third
+# third.ref = first
 
-del(first)
-del(second)
-del(third)
+# del(first)
+# del(second)
+# del(third)
 
-# print_list(head_true)
-
-
+# # print_list(head_true)
 
 
 
 
 
-def fast_method(head):
+
+
+# def fast_method(head):
 
     
-    slow = head
-    fast = head
+#     slow = head
+#     fast = head
 
-    while (fast is not None and fast.ref is not None):
+#     while (fast is not None and fast.ref is not None):
 
-        slow = slow.ref
+#         slow = slow.ref
 
-        fast = fast.ref.ref
+#         fast = fast.ref.ref
 
-        if slow==fast:
+#         if slow==fast:
 
-            return True
+#             return True
     
-    return False
+#     return False
 
-print(fast_method(head_true))
+# print(fast_method(head_true))
+
