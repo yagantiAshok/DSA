@@ -47,22 +47,22 @@ def take_input():
     
     return head
 
-head = take_input()
+# head = take_input()
 
-def print_list(head):
+# def print_list(head):
 
     
-    temp = head 
+#     temp = head 
 
-    while temp!=None:
+#     while temp!=None:
 
-        print(temp.data,end="->")
+#         print(temp.data,end="->")
 
 
-        temp = temp.ref
+#         temp = temp.ref
 
-print_list(head)
-print()
+# print_list(head)
+# print()
 
 # def insert_at_head(head,data):
 
