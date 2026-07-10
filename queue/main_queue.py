@@ -132,4 +132,3 @@ print(queue.front())#None
 
 print(queue.is_empty())#true
 
-print(len(queue))   
