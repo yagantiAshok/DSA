@@ -26,6 +26,4 @@ def times_array_sorted(array):
             end = middle
     
     return start 
-
-
 print(times_array_sorted([13,14,15,16,3,6,9]))
