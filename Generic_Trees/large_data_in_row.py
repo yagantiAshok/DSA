@@ -1,7 +1,7 @@
 
 
 from collections import deque
-from take_input import take_input_level_wise
+from Generic_Trees.take_input import take_input_level_wise
 # def large_data_in_each_level(root):
 #     data = []
 #     data.append(root.data)

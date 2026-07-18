@@ -1,5 +1,5 @@
 
-from genric_trees import TreeNode,print_children_detailed
+from Generic_Trees.genric_trees import TreeNode,print_children_detailed
 from collections import deque
 
 

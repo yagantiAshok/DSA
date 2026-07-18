@@ -1,6 +1,6 @@
 
 
-from take_input import take_input_level_wise
+from Generic_Trees.take_input import take_input_level_wise
 
 def count_nodes(root):
     if(root==None):
