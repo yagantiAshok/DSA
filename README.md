@@ -1,3 +1,3 @@
 
-# Daily PraticinG DSA Problems
+# Daily Praticing DSA Problems
 
