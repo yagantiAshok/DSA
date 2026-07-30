@@ -17,4 +17,5 @@ def diameter_of_tree(root):
     return 1 + max(left_tree_height,right_tree_height)
 
 height = diameter_of_tree(root)
+
 print(f"Diameter {answer[0]} and height is {height} ")
