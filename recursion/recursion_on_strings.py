@@ -28,17 +28,11 @@
 # palindrom = ""
 
 # for i in range(len(string)):
-
 #     last_char = string[len(string)-1-i]
-
 #     palindrom+=last_char
-
 # if palindrom==string:
-
 #     print("These string is palindrome")
-
 # else:
-
 #     print("Not")
 
 
