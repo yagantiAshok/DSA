@@ -28,20 +28,23 @@
 
 
 # while loop 
-def inserton_sort(array):
+# def inserton_sort(array):
 
-    for i in range(1,len(array)):
+#     for i in range(1,len(array)):
 
-        insert = i
+#         insert = i
 
-        while  array[insert]<array[insert-1] and insert>0:
+#         while  array[insert]<array[insert-1] and insert>0:
 
-                array[insert],array[insert-1]=array[insert-1],array[insert]
+#                 array[insert],array[insert-1]=array[insert-1],array[insert]
 
-                insert = insert-1
+#                 insert = insert-1
     
-    return array
+#     return array
 
-result = inserton_sort([100,10,0,-1,444,4,4,4])
+# result = inserton_sort([100,10,0,-1,444,4,4,4])
 
-print(result)
+# print(result)
+
+
+        
