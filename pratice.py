@@ -80,7 +80,59 @@
 #             end = middle  - 1
 #         else:
 #             start = middle + 1
-#     return upper
-# res = upper_bound([2,3,4,5,6,7,10],-1)
+# #     return upper
+# # res = upper_bound([2,3,4,5,6,7,10],-1)
+# # print(res)
+
+
+
+# "rotated sorted array"
+
+# def rotated_array(array,x):
+
+#     start = 0
+#     end = len(array)-1
+#     while start<=end:
+#         middle = start + (end-start)//2
+#         if array[middle]==x:
+#             return middle
+#         elif array[start]<=array[middle]:
+#             if array[start]<=x<array[middle]:
+#                 end = middle - 1
+#             else:
+#                 start = middle + 1
+#         else:
+#             if array[middle]<x<=array[end]:
+#                 start = middle + 1
+#             else:
+#                 end = middle - 1
+#     return -1 
+
+# res = rotated_array([7,1],1)
+
 # print(res)
+
+# x = 1
+# def inc(n):
+#     print(hex(id(n)))
+#     n = n + 1
+#     print(hex(id(n)))
+# inc(x)
+# print(hex(id(x)))
+
+# class Student:
+#     college = "JKC"              # lives in Student's namespace
+#     def __init__(self, name):
+#         self.name = name 
+#     def branch(self):
+#         pass        # lives in this instance's namespace
+
+# s1 = Student("Ashok")
+# s2 = Student("Ravi")
+# # print(s2.__dict__)
+# s1.college = "rvit"
+# print(s1.__dict__)
+# print(s1.college)
+# print(s2.college)
+# print(Student.college)
 
