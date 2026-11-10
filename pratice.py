@@ -136,3 +136,15 @@
 # print(s2.college)
 # print(Student.college)
 
+
+for j in range(0,0):
+    print(j)
+
+matrix = [
+    [1],
+    [2],
+    [3],
+    [4]
+]
+print(matrix)
+print(matrix[1][0])
